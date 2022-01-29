@@ -1,15 +1,17 @@
 import React from "react";
-import ContactButton from "../ContactButton/ContactButton";
+import AboutMeButton from "../AboutMeButton/AboutMeButton";
 import HomeButton from "../HomeButton/HomeButton";
 import Logo from "../Logo/Logo";
+import MobileBurgerButton from "../MobileBurgerButton/MobileBurgerButton";
 import "./TopNav.scss";
 
 const TopNav = () => {
   return (
-    <div className="topNav__container container">
+    <div className="topNav__container">
       <Logo />
       <HomeButton />
-      <ContactButton />
+      {window.innerWidth > 820 && <AboutMeButton />}
+      {window.innerWidth < 820 && <MobileBurgerButton />}
     </div>
   );
 };

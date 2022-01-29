@@ -1,4 +1,6 @@
 $primary-color: rgb(0, 15, 29);
+$primary-color-rbga: rgba(0, 15, 29, 1);
+$primary-color-shadow: rgb(0, 0, 0);
 $accent-color: rgb(61, 159, 250);
 $accent-color-shadow : rgb(3, 75, 143);
 $font-color: rgb(248, 252, 255);
@@ -7,6 +9,3 @@ $primary-rgba: rgba(0, 15, 29, 0.8);
 $main-font: "Roboto Mono", sans-serif;
 $accent-font: "Oooh Baby", serif;
 
-.container {
-    padding: 2rem;
-}

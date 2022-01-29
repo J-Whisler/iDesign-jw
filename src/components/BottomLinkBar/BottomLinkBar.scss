@@ -1,0 +1,13 @@
+@import "../../utilities/variables.scss";
+
+.bottomLinkBar__container {
+    display: flex;
+    padding-left: 4rem;
+
+    position: relative;
+    bottom: 1.5rem;
+    
+    .link {
+        margin-right: 3rem;
+    }
+}

@@ -2,14 +2,24 @@
 
 .homeButton__container {
     display: flex;
-    
+    justify-self: center;
+    z-index: 100;
     .icon {
-        font-size: 4rem;
-        color: $accent-color;
+        font-size: 4.3rem;
+        color: $primary-color;
         border: 2px solid $accent-color;
-        border-radius: 50%;
-        padding: 0.8rem;
+        background: $accent-color;
+        border-radius: 100%;
+        padding: 1rem 0.8rem;
 
         cursor: pointer;
+
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            border: 2px solid $accent-color;
+            color: $accent-color;
+            background: $primary-color;
+            box-shadow: 0 0 20px $accent-color;
+        }
     }
 }

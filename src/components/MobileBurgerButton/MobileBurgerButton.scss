@@ -1,0 +1,23 @@
+@import "../../utilities/variables.scss";
+
+.mobileBurgerButton__container {
+    display: flex;
+    flex-direction: column;
+
+    justify-self: flex-end;
+    margin-right: 1rem;
+
+    border: 2px solid $accent-color;
+    border-radius: 0.2rem;
+    padding: 0.5rem 0.6rem;
+   
+    
+    .mobileBurgerButton__containerLine {
+        background-color: $accent-color-shadow;
+        border-radius: 1rem;
+        padding: 0.2rem 1.5rem;
+        &.margin-bottom {
+            margin-bottom: 0.5rem;
+        }
+    }
+}

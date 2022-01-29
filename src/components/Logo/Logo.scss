@@ -1,9 +1,11 @@
 @import "../../utilities/variables.scss";
 
-.logo__container {  
-    color: $font-color;
+.logo__container {
+    margin-left: 1rem;  
     .logo {
+        color: $font-color;
         font-size: 3rem;
         font-family: $accent-font;
+        letter-spacing: 1rem;
     }
 }

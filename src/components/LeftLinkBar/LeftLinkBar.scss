@@ -1,0 +1,16 @@
+@import "../../utilities/variables.scss";
+
+.leftLinkBar__container {
+    width: 10%;
+    height: 80vh;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    .leftLinkBar__link {
+        writing-mode: sideways-rl;
+        color: $font-color;
+        
+        margin-bottom: 5rem;
+    }
+}
