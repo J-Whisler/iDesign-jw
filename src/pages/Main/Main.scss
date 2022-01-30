@@ -18,10 +18,27 @@
       }
 }
 
+@keyframes expandWidth {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    25% {
+        width: 0;
+        opacity: 0;
+    }
+    100% {
+        width: "65vw";
+        opacity: 1;
+    }
+};
+
 .main__container {
     background-color: $primary-color;
     height: 100vh;
     // padding: 2rem;
+
+    overflow: hidden;
     .main__content {
         position: absolute;
         top: 50%;
@@ -31,6 +48,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+       
 
         cursor: pointer;
 
@@ -101,11 +119,16 @@
         box-shadow: 0 6px 30px $primary-color-shadow;
         background: $primary-color-rbga;
 
-        padding: 1rem;
+        // padding: 1rem;
+        // margin: 1rem;
         width: 55vw;
+        height: 39vh;
+        animation-name: expandWidth;
+        animation-duration: 1.5s;
         .main__contentBoxLeft {
             color: $font-color;
             font-family: $main-font;
+            margin-left: 1rem;
             h3 {
                 font-size: 2.5rem;
                 margin-top: 0.7rem;
@@ -130,7 +153,7 @@
                 }
             }
             .main__contentBoxLeftButtons {
-                margin-top: 2rem;
+                margin-top: 2.5rem;
                 
                 .contactLink {
                     font-size: 1.5rem;
@@ -163,6 +186,7 @@
 
         }
         .main__contentBoxRight {
+            // display: none;
             .image {
                 width: 100%;
             }

@@ -1,34 +1,36 @@
 import React from "react";
-import "./Logo.scss";
+import "./SkillsButton.scss";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
-const Logo = () => {
-  const LogoAnimation = {
+const SkillsButton = () => {
+  const SkillsButtonAnimation = {
     hidden: {
       opacity: 0,
-      x: "-100vw",
+      y: "50vh",
     },
     show: {
       opacity: 1,
-      x: 0,
+      y: 0,
       transition: {
         type: "spring",
         stiffness: 50,
-        delay: 0.5,
+        delay: 2.4,
       },
     },
   };
 
   return (
     <motion.div
-      className="logo__container"
-      variants={LogoAnimation}
+      variants={SkillsButtonAnimation}
       initial="hidden"
       animate="show"
     >
-      <h4 className="logo">J.W.</h4>
+      <Link to="/skills" className="link">
+        My Skills
+      </Link>
     </motion.div>
   );
 };
 
-export default Logo;
+export default SkillsButton;

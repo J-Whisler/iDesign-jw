@@ -3,10 +3,11 @@
 .contactButton__container {
     display: flex;
     justify-self: flex-end;
-    margin-right: 1rem;
     h6 {
         font-size: 1.8rem;
         color: $font-color;
         font-family: $main-font;
+        writing-mode: sideways-rl;
+        margin-bottom: 5rem;
     }
 }

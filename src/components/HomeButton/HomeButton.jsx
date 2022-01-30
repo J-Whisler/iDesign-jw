@@ -3,14 +3,36 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
 import "./HomeButton.scss";
+import { motion } from "framer-motion";
 
 const HomeButton = () => {
+  const HomeButtonAnimation = {
+    hidden: {
+      opacity: 0,
+      y: "-50vh",
+    },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        stiffness: 50,
+        delay: 1,
+      },
+    },
+  };
+
   return (
-    <div className="homeButton__container">
+    <motion.div
+      className="homeButton__container"
+      variants={HomeButtonAnimation}
+      initial="hidden"
+      animate="show"
+    >
       <Link to="/" className="link">
         <FontAwesomeIcon icon={faHome} className="icon" />
       </Link>
-    </div>
+    </motion.div>
   );
 };
 

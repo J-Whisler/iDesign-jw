@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ContactButton from "../ContactButton/ContactButton";
 import "./LeftLinkBar.scss";
 
 const LeftLinkBar = () => {
   return (
     <div className="leftLinkBar__container">
-      <Link to="/contact" className="link leftLinkBar__link">
-        Contact Me
-      </Link>
+      <ContactButton />
     </div>
   );
 };
