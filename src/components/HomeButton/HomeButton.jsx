@@ -17,7 +17,7 @@ const HomeButton = () => {
       transition: {
         type: "spring",
         stiffness: 50,
-        delay: 1,
+        delay: 0.5,
       },
     },
   };

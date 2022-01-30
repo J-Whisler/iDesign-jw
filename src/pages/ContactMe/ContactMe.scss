@@ -1,0 +1,37 @@
+@import "../../utilities/variables.scss";
+
+.contactMe__container {
+    background: $primary-color;
+    height: 100vh;
+    overflow: hidden;
+    .contactMe__contentBox {
+        border: 2px solid $accent-color-shadow;
+        border-radius: 1rem;
+
+        box-shadow: 0 6px 30px $primary-color-shadow;
+        background: $primary-rgba;
+
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 55vw;
+        height: 45vh;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        .contactMe__contentBoxLeft {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .contactMe__contentBoxLeftImage {
+                width: 60%;
+                
+            }
+        }
+        // .contactMe__contentBoxRight {
+           
+        // } 
+    }
+}

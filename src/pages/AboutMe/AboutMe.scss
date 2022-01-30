@@ -4,4 +4,19 @@
     background: $primary-color;
     height: 100vh;
     overflow: hidden;
+    .aboutMe__contentBox {
+        border: 2px solid $accent-color-shadow;
+        border-radius: 1rem;
+
+        box-shadow: 0 6px 30px $primary-color-shadow;
+        background: $primary-rgba;
+
+        position: absolute;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 55vw;
+        height: 39vh;
+    }
 }

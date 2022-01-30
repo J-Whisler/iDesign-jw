@@ -1,6 +1,7 @@
 import React from "react";
 import "./ContactButton.scss";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const ContactButton = () => {
   const ContacAnimation = {
@@ -14,7 +15,7 @@ const ContactButton = () => {
       transition: {
         type: "spring",
         stiffness: 50,
-        delay: 2,
+        delay: 1.2,
       },
     },
   };
@@ -25,7 +26,9 @@ const ContactButton = () => {
       initial="hidden"
       animate="show"
     >
-      <h6>Contact Me</h6>
+      <Link to="/contact" className="link">
+        Contact Me
+      </Link>
     </motion.div>
   );
 };

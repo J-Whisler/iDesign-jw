@@ -15,7 +15,7 @@ const SkillsButton = () => {
       transition: {
         type: "spring",
         stiffness: 50,
-        delay: 2.4,
+        delay: 1.6,
       },
     },
   };

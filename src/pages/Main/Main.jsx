@@ -23,7 +23,7 @@ const Main = () => {
     show: {
       opacity: 1,
       transition: {
-        delay: 6.5,
+        delay: 5,
       },
     },
   };
@@ -46,7 +46,7 @@ const Main = () => {
     show: {
       opacity: 1,
       transition: {
-        delay: 6.7,
+        delay: 5.2,
       },
     },
   };

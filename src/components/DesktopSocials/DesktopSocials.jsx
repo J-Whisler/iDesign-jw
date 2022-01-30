@@ -22,7 +22,7 @@ const DesktopSocials = () => {
       transition: {
         type: "spring",
         stiffness: 50,
-        delay: 3.2,
+        delay: 1.8,
       },
     },
   };
@@ -37,7 +37,7 @@ const DesktopSocials = () => {
       transition: {
         type: "spring",
         stiffness: 50,
-        delay: 3.4,
+        delay: 2.0,
       },
     },
   };
@@ -52,7 +52,7 @@ const DesktopSocials = () => {
       transition: {
         type: "spring",
         stiffness: 50,
-        delay: 3.6,
+        delay: 2.2,
       },
     },
   };
@@ -67,7 +67,7 @@ const DesktopSocials = () => {
       transition: {
         type: "spring",
         stiffness: 50,
-        delay: 3.8,
+        delay: 2.4,
       },
     },
   };
@@ -82,7 +82,7 @@ const DesktopSocials = () => {
       transition: {
         type: "spring",
         stiffness: 50,
-        delay: 4.7,
+        delay: 3.0,
       },
     },
   };
@@ -97,7 +97,7 @@ const DesktopSocials = () => {
       transition: {
         type: "spring",
         stiffness: 50,
-        delay: 4.9,
+        delay: 3.2,
       },
     },
   };
@@ -112,7 +112,7 @@ const DesktopSocials = () => {
       transition: {
         type: "spring",
         stiffness: 50,
-        delay: 5.1,
+        delay: 3.4,
       },
     },
   };
@@ -127,7 +127,7 @@ const DesktopSocials = () => {
       transition: {
         type: "spring",
         stiffness: 50,
-        delay: 6.2,
+        delay: 4.2,
         // damping: 12,
       },
     },

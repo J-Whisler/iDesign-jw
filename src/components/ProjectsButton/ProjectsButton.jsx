@@ -15,7 +15,7 @@ const ProjectsButton = () => {
       transition: {
         type: "spring",
         stiffness: 50,
-        delay: 2.2,
+        delay: 1.4,
       },
     },
   };
