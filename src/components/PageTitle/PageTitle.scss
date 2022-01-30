@@ -1,0 +1,16 @@
+@import "../../utilities/variables.scss";
+
+.pageTitle__container {
+    color: $accent-color;
+    text-shadow: 2px 2px 3px $accent-color-shadow;
+    opacity: 0.2;
+    font-family: $main-font;
+    font-size: 4rem;
+    letter-spacing: 1rem;
+    
+    width: fit-content;
+
+    position: absolute;
+    top: 23%;
+    left: 10%;
+}
