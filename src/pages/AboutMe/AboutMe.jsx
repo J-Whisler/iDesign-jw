@@ -10,6 +10,8 @@ import DesktopSocials from "../../components/DesktopSocials/DesktopSocials";
 
 import { Link } from "react-router-dom";
 
+import rocket from "../../assets/rocket.png";
+
 const AboutMe = () => {
   return (
     <div className="aboutMe__container container">
@@ -21,11 +23,15 @@ const AboutMe = () => {
       <PageTitle>
         <h2 className="aboutMe__Title">About</h2>
       </PageTitle>
+      <div className="rocket">
+        <img src={rocket} alt="rocket" />
+      </div>
       <div className="aboutMe__contentBox">
-        <div className="aboutMe__conentBoxText">
+        <div className="aboutMe__contentBoxText">
           <div className="aboutMe__paragraph">
-            I am a Front-End Web Developer currently living in Cleveland, Ohio.
-            I love to create awesome websites just like this one!
+            I am a 28 year old Front-End Web Developer currently living in
+            Cleveland, Ohio. I love to create awesome websites just like this
+            one!
           </div>
           <div className="aboutMe__paragraph">
             I started learning web development through a 6 month coding program
@@ -36,12 +42,12 @@ const AboutMe = () => {
             {" "}
             If you would like to see more of the projects that I have created
             click{" "}
-            <Link to="/projects" className="p-link">
+            <Link to="/projects" className="p-link link">
               here
             </Link>
             , or if you would like to contact me about designing and creating a
             website for you click{" "}
-            <Link to="/contact" className="p-link">
+            <Link to="/contact" className="p-link link">
               here
             </Link>
             !

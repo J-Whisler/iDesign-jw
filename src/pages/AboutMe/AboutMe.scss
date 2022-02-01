@@ -1,9 +1,35 @@
 @import "../../utilities/variables.scss";
 
+
+@keyframes float {
+     0% {
+    transform: translateY(5px);
+  }
+
+  50% {
+    transform: translateY(-5px) translateX(10px);
+  }
+
+  100% {
+    transform: translateY(5px);
+  }
+}
+
 .aboutMe__container {
     background: $primary-color;
     height: 100vh;
     overflow: hidden;
+    .rocket {
+        position: absolute;
+        top: 15%;
+        left: 65%;
+        transform: rotate(-.16turn);
+        img {
+            width: 40%;
+            animation: float 5s infinite linear;
+
+        }
+    }
     .aboutMe__contentBox {
         border: 2px solid $accent-color-shadow;
         border-radius: 1rem;
@@ -12,11 +38,31 @@
         background: $primary-rgba;
 
         position: absolute;
-        top: 52%;
+        top: 58%;
         left: 50%;
         transform: translate(-50%, -50%);
 
         width: 55vw;
-        height: 39vh;
+        height: 50vh;
+
+        padding: 1rem;
+
+        display: flex;
+        align-items: center;
+        .aboutMe__contentBoxText {
+            display: flex;
+            flex-direction: column;
+            padding-top: 1rem;
+            .aboutMe__paragraph {
+                color: $font-color;
+                font-family: $main-font;
+                font-size: 1.3rem;
+                margin-bottom: 1.5rem;
+                .p-link {
+                    font-size: 1.3rem;
+                    color: $accent-color;
+                }
+            }
+        }
     }
 }
