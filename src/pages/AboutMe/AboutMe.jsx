@@ -19,7 +19,7 @@ const AboutMe = () => {
       {window.innerWidth > 820 && <BottomLinkBar />}
       {window.innerWidth > 820 && <DesktopSocials />}
       <PageTitle>
-        <h2 className="aboutMe__Title">About Me</h2>
+        <h2 className="aboutMe__Title">About</h2>
       </PageTitle>
       <div className="aboutMe__contentBox">
         <div className="aboutMe__conentBoxText">

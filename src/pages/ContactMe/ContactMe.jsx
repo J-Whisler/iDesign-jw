@@ -21,7 +21,7 @@ const ContactMe = () => {
       {window.innerWidth > 820 && <BottomLinkBar />}
       {window.innerWidth > 820 && <DesktopSocials />}
       <PageTitle>
-        <h2 className="contactMe__Title">Contact Me</h2>
+        <h2 className="contactMe__Title">Contact</h2>
       </PageTitle>
       <div className="contactMe__contentBox">
         <div className="contactMe__contentBoxLeft">

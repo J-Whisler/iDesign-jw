@@ -1,0 +1,103 @@
+@import "../../utilities/variables.scss";
+
+.projectCard__container {
+    border: 2px solid $accent-color;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    // height: 15rem;
+    margin-bottom: 1rem;
+    .projectCard__header {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid $accent-color-shadow;
+        padding-bottom: 0.2rem;
+        .projectCard__title {
+           color: $accent-color;
+           font-family: $main-font;
+           h3 {
+            font-size: 1.7rem;
+            .icon {
+                margin-left: 0.3rem;
+                font-size: 1.3rem;
+                opacity: 0.5;
+            }
+          }
+          span {
+              color: $font-color;
+              opacity: 0.5;
+              font-size: 1.1rem;
+          }
+        }
+        .projectCard__number {
+            
+            span {
+                color: $font-color;
+                opacity: 0.6;
+                font-size: 1.2rem;
+                font-family: $main-font;
+                border: 2px solid $font-color;
+                border-radius: 100%;
+                display: flex;
+                padding: 0.2rem 0.7rem;
+            }
+        } 
+
+    }
+    .projectCard__description {
+        margin-top: 0.5rem;
+        p {
+            color: $font-color;
+            font-family: $main-font;
+            font-size: 1.2rem;
+        }
+    }
+    .projectCard__button {
+        border-bottom: 2px solid $accent-color-shadow;
+        padding-bottom: 0.5rem;
+        .projectCard__buttonLink {
+            button {
+                background: $accent-color;
+                color: $primary-color;
+                font-family: $main-font;
+                font-size: 1.1rem;
+                border: 2px solid $accent-color;
+                border-radius: 1rem;
+                padding: 0.2rem 0.7rem;
+                margin-top: 1rem;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    background: $primary-color;
+                    color: $accent-color;
+                }
+            }
+        }
+    }
+    .projectCard__toolsUsed {
+        display: flex;
+        align-items: center;
+        margin-top: 0.5rem;
+        .toolsUsed__title {
+            h6 {
+                color: $font-color;
+                font-size: 1.1rem;
+                margin-right: 0.5rem;
+                opacity: 0.8;
+            }
+        }
+        .toolsUsed__toolsList {
+            display: flex;
+            align-items: center;
+            .link {
+                display: flex;
+                
+                .tool {
+                    color: $accent-color;
+                    margin-right: 0.2rem;
+                    font-size: 0.9rem;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}

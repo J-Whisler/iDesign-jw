@@ -19,7 +19,7 @@ export const ProjectData = [
         link: "https://reactjs.org/",
       },
       {
-        toolName: "React Router",
+        toolName: "React-Router",
         link: "https://reactrouter.com/",
       },
       {
