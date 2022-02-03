@@ -82,7 +82,7 @@ export const ProjectData = [
         link: "https://www.mulesoft.com/resources/api/what-is-an-api",
       },
       {
-        toolName: "React 'State' Management",
+        toolName: "React-'State'-Management",
         link: "https://www.w3schools.com/react/react_state.asp",
       },
     ],
@@ -97,15 +97,15 @@ export const ProjectData = [
       "This is my version of the classic game 'Rock, Paper, Scissors'.  Users are able compete against a computer opponent to see how high of a score they can get!  Score 1 point every time you win, and lose 1 point every time you lose.  Users can also reset the score at any time.",
     toolsUsed: [
       {
-        toolName: "CSS Transitions",
+        toolName: "CSS-Transitions",
         link: "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions",
       },
       {
-        toolName: "Framer Motion",
+        toolName: "Framer-Motion",
         link: "https://www.framer.com/motion/",
       },
       {
-        toolName: "React Hooks",
+        toolName: "React-Hooks",
         link: "https://reactjs.org/docs/hooks-intro.html",
       },
     ],
@@ -120,7 +120,7 @@ export const ProjectData = [
       "This is a recreation I did of the classic Netflix landing page.  This is something similar to what users would see when they enter the Netflix app for the first time, before they have created an account.  This landing page features a functioning tab section with different information about Netflix on each tab, similar to what you might see on the actual Netflix app.",
     toolsUsed: [
       {
-        toolName: "Styled Components",
+        toolName: "Styled-Components",
         link: "https://styled-components.com/",
       },
       {
@@ -128,11 +128,11 @@ export const ProjectData = [
         link: "https://reactjs.org/docs/introducing-jsx.html",
       },
       {
-        toolName: "Conditional Rendering",
+        toolName: "Conditional-Rendering",
         link: "https://reactjs.org/docs/conditional-rendering.html",
       },
       {
-        toolName: "Javascript Event Listeners",
+        toolName: "Javascript-Event-Listeners",
         link: "https://www.w3schools.com/js/js_htmldom_eventlistener.asp",
       },
     ],

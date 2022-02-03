@@ -5,6 +5,14 @@
     border-radius: 1rem;
     padding: 0.5rem;
     box-shadow: 0 6px 30px $primary-color-shadow;
+    transform: translateX(-99%);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+
+    &.inView {
+        transform: translateX(0);
+        opacity: 1;
+      }
     .skillsCard__header {
         color: $accent-color;
         font-family: $main-font;
@@ -61,5 +69,8 @@
                 opacity: 0.5;
             }
         }
+    }
+    @media (max-width: 820px) {
+        margin-bottom: 1rem;
     }
 }

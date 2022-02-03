@@ -14,7 +14,7 @@ const MobileBurgerButton = ({ mobileMenuIsOpen, setMobileMenuIsOpen }) => {
       transition: {
         type: "spring",
         stiffness: 50,
-        delay: 1.5,
+        delay: 0.8,
       },
     },
   };

@@ -14,7 +14,6 @@ import { motion } from "framer-motion";
 
 const Main = () => {
   const [centerIsClicked, setCenterIsClicked] = useState(false);
-  console.log(centerIsClicked);
 
   const MainSpinnerDesktopAnimation = {
     hidden: {
@@ -155,6 +154,16 @@ const Main = () => {
     },
   };
 
+  const getMainContentClassName = () => {
+    if (window.innerWidth > 820 && centerIsClicked) {
+      return "main__content desktopClicked";
+    } else if (window.innerWidth > 820 && !centerIsClicked) {
+      return "main__content";
+    } else if (window.innerWidth < 820 && centerIsClicked) {
+      return "main__content mobileClicked";
+    } else return "main__content";
+  };
+
   return (
     <div className="main__container container">
       <ParticleComponent theme="theme1" />
@@ -163,7 +172,7 @@ const Main = () => {
       {window.innerWidth > 820 && <BottomLinkBar />}
       {window.innerWidth > 820 && <DesktopSocials />}
       <div
-        className={centerIsClicked ? "main__content clicked" : "main__content"}
+        className={getMainContentClassName()}
         onClick={() => setCenterIsClicked(!centerIsClicked)}
       >
         <motion.div

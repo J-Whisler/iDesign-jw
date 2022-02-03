@@ -1,10 +1,32 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useEffect } from "react";
 import "./ProjectCard.scss";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const ProjectCard = ({ project }) => {
+  const { ref, inView } = useInView();
+
+  const animation = useAnimation();
+
+  useEffect(() => {
+    console.log("in view", inView);
+  }, [inView]);
+
   return (
-    <div className="projectCard__container">
+    <motion.div
+      ref={ref}
+      className={
+        inView ? "projectCard__container inView" : "projectCard__container"
+      }
+      // variants={
+      //   window.innerWidth > 820
+      //     ? ProjectCardAnimation
+      //     : ProjectCardMobileAnimation
+      // }
+      // initial="hidden"
+      // animate="show"
+    >
       <div className="projectCard__header">
         <div className="projectCard__title">
           <h3>
@@ -42,7 +64,7 @@ const ProjectCard = ({ project }) => {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

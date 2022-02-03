@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./SkillsCard.scss";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const SkillsCard = ({ skill }) => {
+  const { ref, inView } = useInView();
+
+  const animation = useAnimation();
+
+  useEffect(() => {
+    console.log("in view", inView);
+  }, [inView]);
+
   return (
-    <div className="skillsCard__container">
+    <motion.div
+      ref={ref}
+      className={
+        inView ? "skillsCard__container inView" : "projectCard__container"
+      }
+    >
       <div className="skillsCard__header">
         <h3>{skill.name}</h3>
         <h6>{skill.subName}</h6>
@@ -29,7 +44,7 @@ const SkillsCard = ({ skill }) => {
           <span>{skill.skillLevel}%</span>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -43,8 +43,51 @@ const ContactForm = () => {
       setEmailSent(false);
     }, 4000);
   };
+
+  const ContactFormAnimation = {
+    hidden: {
+      scale: 0,
+      opacity: 0,
+    },
+    show: {
+      scale: 1,
+      opacity: 1,
+
+      transition: {
+        type: "spring",
+        stiffness: 60,
+        delay: 5.4,
+      },
+    },
+  };
+
+  const ContactFormMobileAnimation = {
+    hidden: {
+      scale: 0,
+      opacity: 0,
+    },
+    show: {
+      scale: 1,
+      opacity: 1,
+
+      transition: {
+        type: "spring",
+        stiffness: 60,
+        delay: 3.4,
+      },
+    },
+  };
   return (
-    <div className="contactForm__container">
+    <motion.div
+      className="contactForm__container"
+      variants={
+        window.innerWidth > 820
+          ? ContactFormAnimation
+          : ContactFormMobileAnimation
+      }
+      initial="hidden"
+      animate="show"
+    >
       <div className="contactForm__form">
         <div className="contactForm__formTitle">
           <h2>
@@ -105,7 +148,7 @@ const ContactForm = () => {
           </form>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

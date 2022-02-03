@@ -9,8 +9,71 @@ import PageTitle from "../../components/PageTitle/PageTitle";
 
 import { SkillsData } from "../../data/skillsData";
 import SkillsCard from "../../components/SkillsCard/SkillsCard";
-
+import { motion } from "framer-motion";
 const MySkills = () => {
+  const ContentBoxAnimation = {
+    hidden: {
+      opacity: 0,
+      height: 0,
+      width: 0,
+    },
+    show: {
+      opacity: 1,
+      height: "50vh",
+      width: "55vw",
+      transition: {
+        type: "spring",
+        stiffness: 50,
+        delay: 4.5,
+      },
+    },
+  };
+
+  const ContentBoxMobileAnimation = {
+    hidden: {
+      opacity: 0,
+      height: 0,
+      width: 0,
+    },
+    show: {
+      opacity: 1,
+      height: "65vh",
+      width: "85vw",
+      transition: {
+        type: "spring",
+        stiffness: 50,
+        delay: 2,
+      },
+    },
+  };
+  const ContentBoxInnerAnimation = {
+    hidden: {
+      opacity: 0,
+    },
+    show: {
+      opacity: 1,
+
+      transition: {
+        duration: 1,
+        delay: 5.5,
+      },
+    },
+  };
+
+  const ContentBoxInnerMobileAnimation = {
+    hidden: {
+      opacity: 0,
+    },
+    show: {
+      opacity: 1,
+
+      transition: {
+        duration: 1,
+        delay: 3,
+      },
+    },
+  };
+
   return (
     <div className="mySkills__container container">
       <ParticleComponent theme="theme5" />
@@ -21,11 +84,31 @@ const MySkills = () => {
       <PageTitle>
         <h2 className="mySkills__Title">Skills</h2>
       </PageTitle>
-      <div className="mySkills__contentBox">
-        {SkillsData.map((skill) => (
-          <SkillsCard skill={skill} id={skill.id} />
-        ))}
-      </div>
+      <motion.div
+        className="mySkills__contentBox"
+        variants={
+          window.innerWidth > 820
+            ? ContentBoxAnimation
+            : ContentBoxMobileAnimation
+        }
+        initial="hidden"
+        animate="show"
+      >
+        <motion.div
+          className="content"
+          variants={
+            window.innerWidth > 820
+              ? ContentBoxInnerAnimation
+              : ContentBoxInnerMobileAnimation
+          }
+          initial="hidden"
+          animate="show"
+        >
+          {SkillsData.map((skill) => (
+            <SkillsCard skill={skill} id={skill.id} />
+          ))}
+        </motion.div>
+      </motion.div>
     </div>
   );
 };
