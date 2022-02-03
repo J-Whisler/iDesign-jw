@@ -37,7 +37,7 @@ const ProjectCard = ({ project }) => {
         <div className="toolsUsed__toolsList">
           {project.toolsUsed.map((tool) => (
             <a className="link" href={tool.link}>
-              <span className="tool">#{tool.toolName}</span>
+              <span className="tool">{tool.toolName}</span>
             </a>
           ))}
         </div>

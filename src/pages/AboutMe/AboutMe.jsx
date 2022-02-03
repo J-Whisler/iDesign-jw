@@ -15,7 +15,7 @@ import rocket from "../../assets/rocket.png";
 const AboutMe = () => {
   return (
     <div className="aboutMe__container container">
-      <ParticleComponent theme="theme5" />
+      <ParticleComponent theme="theme3" />
       <TopNav />
       {window.innerWidth > 820 && <LeftLinkBar />}
       {window.innerWidth > 820 && <BottomLinkBar />}

@@ -1,0 +1,29 @@
+@import "../../utilities/variables.scss";
+
+.mySkills__container {
+    background: $primary-color;
+    height: 100vh;
+    overflow: hidden;
+    .mySkills__contentBox {
+        border: 2px solid $accent-color-shadow;
+        border-radius: 1rem;
+
+        box-shadow: 0 6px 30px $primary-color-shadow;
+        background: $primary-rgba;
+
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+
+        width: 55vw;
+        height: 45vh;
+        padding: 1rem 0.5rem;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+}

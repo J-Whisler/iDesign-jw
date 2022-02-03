@@ -4,6 +4,7 @@ import Main from './pages/Main/Main';
 import AboutMe from './pages/AboutMe/AboutMe';
 import ContactMe from './pages/ContactMe/ContactMe';
 import MyProjects from './pages/MyProjects/MyProjects';
+import MySkills from './pages/MySkills/MySkills';
 
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
           <Route path="/about" element={<AboutMe />} />
           <Route path="/contact" element={<ContactMe />} />
           <Route path="/projects" element={<MyProjects />} />
-
+          <Route path="/skills" element={<MySkills />} />
         </Routes>
       </div>
     </Router>

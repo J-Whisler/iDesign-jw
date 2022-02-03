@@ -157,7 +157,7 @@ const Main = () => {
 
   return (
     <div className="main__container container">
-      <ParticleComponent theme="theme" />
+      <ParticleComponent theme="theme1" />
       <TopNav />
       {window.innerWidth > 820 && <LeftLinkBar />}
       {window.innerWidth > 820 && <BottomLinkBar />}

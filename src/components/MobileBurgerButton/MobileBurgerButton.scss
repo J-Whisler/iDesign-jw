@@ -11,7 +11,10 @@
     border-radius: 0.2rem;
     padding: 0.5rem 0.6rem;
    
-    
+    z-index: 1000;
+    &.open {
+        z-index: -1;
+    }
     .mobileBurgerButton__containerLine {
         background-color: $accent-color-shadow;
         border-radius: 1rem;

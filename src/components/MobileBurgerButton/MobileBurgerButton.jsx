@@ -2,7 +2,7 @@ import React from "react";
 import "./MobileBurgerButton.scss";
 import { motion } from "framer-motion";
 
-const MobileBurgerButton = () => {
+const MobileBurgerButton = ({ mobileMenuIsOpen, setMobileMenuIsOpen }) => {
   const MobileBurgerAnimation = {
     hidden: {
       opacity: 0,
@@ -20,10 +20,15 @@ const MobileBurgerButton = () => {
   };
   return (
     <motion.div
-      className="mobileBurgerButton__container"
+      className={
+        mobileMenuIsOpen
+          ? "mobileBurgerButton__container open"
+          : "mobileBurgerButton__container"
+      }
       variants={MobileBurgerAnimation}
       initial="hidden"
       animate="show"
+      onClick={() => setMobileMenuIsOpen(true)}
     >
       <div className="mobileBurgerButton__containerLine margin-bottom"></div>
       <div className="mobileBurgerButton__containerLine margin-bottom"></div>

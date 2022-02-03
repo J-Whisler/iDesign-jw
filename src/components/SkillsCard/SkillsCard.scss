@@ -1,0 +1,65 @@
+@import "../../utilities/variables.scss";
+
+.skillsCard__container {
+    border: 2px solid $accent-color;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    box-shadow: 0 6px 30px $primary-color-shadow;
+    .skillsCard__header {
+        color: $accent-color;
+        font-family: $main-font;
+        h3 {
+            font-size: 1.5rem;
+            letter-spacing: 0.1rem;
+            text-decoration: underline;
+        }
+        h6 {
+            color: $font-color;
+            font-size: 1.1rem;
+            opacity: 0.5;
+        }
+        .tags {
+            border-bottom: 2px solid $accent-color;
+            padding-bottom: 0.1rem;
+            p {
+                color: $accent-color-shadow;
+                a {
+                    text-decoration: none;
+                    span {
+                        color: $font-color;
+                        opacity: 0.3;
+                        margin-left: 0.5rem;
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+    }
+    .skillsCard__body {
+        color: $font-color;
+        font-family: $main-font;
+        margin-top: 0.2rem;
+        p {
+            font-size: 1rem;
+            margin-bottom: 0.1rem;
+        }
+        .skillsCard__bodyProgressBar {
+            border: 2px solid $accent-color;
+            border-radius: 1rem;
+            margin: 0.3rem 0 0.1rem;
+            display: flex;
+            align-items: center;
+            .progressBar {
+                background: $accent-color-shadow;
+                padding: 0.7rem;
+                border-radius: 1rem 0 0 1rem;
+               
+            }
+            span {
+                font-size: 1rem;
+                margin-left: 0.4rem;
+                opacity: 0.5;
+            }
+        }
+    }
+}

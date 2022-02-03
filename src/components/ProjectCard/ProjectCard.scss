@@ -6,6 +6,8 @@
     padding: 0.5rem 1rem;
     // height: 15rem;
     margin-bottom: 1rem;
+    box-shadow: 0 6px 30px $primary-color-shadow;
+
     .projectCard__header {
         display: flex;
         justify-content: space-between;
@@ -90,9 +92,9 @@
             align-items: center;
             .link {
                 display: flex;
-                
                 .tool {
                     color: $accent-color;
+                    text-decoration: underline;
                     margin-right: 0.2rem;
                     font-size: 0.9rem;
                     opacity: 0.8;
