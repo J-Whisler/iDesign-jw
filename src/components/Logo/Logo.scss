@@ -7,5 +7,12 @@
         font-size: 3rem;
         font-family: $accent-font;
         letter-spacing: 1rem;
+
+    }
+    @media (max-width: 450px) {
+        margin-left: 0;
+        .logo {
+            font-size: 2rem;
+        }
     }
 }

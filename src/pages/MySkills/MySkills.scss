@@ -38,5 +38,11 @@
                 grid-template-columns: repeat(1, 1fr);
             }
         }
+        @media (max-width: 4500px) {
+            width: 85vw;
+            height: 65vh;
+            top: 57%;
+         
+        }
     }
 }

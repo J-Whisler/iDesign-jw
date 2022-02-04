@@ -23,4 +23,10 @@
             margin-bottom: 0.5rem;
         }
     }
+    @media (max-width: 450px) {
+        padding: 0.2rem 0.3rem;
+        .mobileBurgerButton__containerLine {
+            padding: 0.2rem 1.3rem;
+        }
+    }
 }

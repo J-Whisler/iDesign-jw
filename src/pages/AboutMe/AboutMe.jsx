@@ -18,13 +18,10 @@ const AboutMe = () => {
   const ContentBoxAnimation = {
     hidden: {
       opacity: 0,
-      height: 0,
-      width: 0,
     },
     show: {
       opacity: 1,
-      height: "50vh",
-      width: "55vw",
+
       transition: {
         type: "spring",
         stiffness: 50,
@@ -36,13 +33,10 @@ const AboutMe = () => {
   const ContentBoxMobileAnimation = {
     hidden: {
       opacity: 0,
-      height: 0,
-      width: 0,
     },
     show: {
       opacity: 1,
-      height: "45vh",
-      width: "85vw",
+
       transition: {
         type: "spring",
         stiffness: 50,

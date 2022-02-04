@@ -37,6 +37,13 @@
                 width: 120%;
             }
         }
+        @media (max-width: 8450px) {
+            left: 65%;
+            top: 20%;
+            img {
+                width: 120%;
+            }
+        }
     }
     .aboutMe__contentBox {
         border: 2px solid $accent-color-shadow;
@@ -78,6 +85,8 @@
         @media (max-width: 820px) {
           
             top: 50.5%;
+            height: 45vh;
+            width: 85vw;
         
             .aboutMe__contentBoxText {
                 margin: -2rem 0;
@@ -87,10 +96,21 @@
             }
             
         }
+
+        @media (max-width: 450px) {
+            height: 65vh;
+            width: 85vw;
+            top: 55%;
+            .aboutMe__contentBoxText {
+                .aboutMe__paragraph {
+                    font-size: 1.1rem;
+                }
+            }
+        }
     }
-    // @media (max-width: 820px) {
-    //     // width: 85vw;
-    //     // height: 70vh;
-    //     height: 110vh;
-    // }
+    @media (max-width: 450px) {
+        // width: 85vw;
+        // height: 70vh;
+        height: 120vh;
+    }
 }

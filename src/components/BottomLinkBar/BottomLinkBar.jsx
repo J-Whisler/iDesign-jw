@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import ProjectsButton from "../ProjectsButton/ProjectsButton";
 import SkillsButton from "../SkillsButton/SkillsButton";
 import "./BottomLinkBar.scss";
