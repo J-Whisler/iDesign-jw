@@ -37,7 +37,7 @@
                 width: 120%;
             }
         }
-        @media (max-width: 8450px) {
+        @media (max-width: 450px) {
             left: 65%;
             top: 20%;
             img {
@@ -75,6 +75,7 @@
                 font-size: 1.3rem;
                 margin-bottom: 1.5rem;
                 text-shadow: 0 0 5px $primary-color-shadow;
+            
                 .p-link {
                     font-size: 1.3rem;
                     color: $accent-color;
@@ -107,10 +108,13 @@
                 }
             }
         }
+        @media (max-width: 390px) {
+            .aboutMe__contentBoxText {
+                .aboutMe__paragraph {
+                    font-size: 1rem;
+                }
+            }
+        }
     }
-    @media (max-width: 450px) {
-        // width: 85vw;
-        // height: 70vh;
-        height: 120vh;
-    }
+   
 }
