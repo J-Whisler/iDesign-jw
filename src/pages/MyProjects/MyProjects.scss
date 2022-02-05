@@ -3,7 +3,7 @@
 .myProjects__container {
     background: $primary-color;
     height: 100vh;
-    overflow: hidden;
+    overflow: scroll;
     .myProjects__contentBox {
         border: 2px solid $accent-color-shadow;
         border-radius: 1rem;
