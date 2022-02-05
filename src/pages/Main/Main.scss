@@ -141,13 +141,7 @@
         height: 39vh;
         animation-name: expandWidth;
         animation-duration: 1.5s;
-        @media (max-width: 820px) {
-            width: 80vw;
-            height: 45vh;
-            .main__contentBoxRight {
-                display: none;
-            }
-        }
+        
         .main__contentBoxLeft {
             color: $font-color;
             font-family: $main-font;
@@ -212,6 +206,45 @@
             // display: none;
             .image {
                 width: 100%;
+            }
+        }
+        @media (max-width: 820px) {
+            width: 80vw;
+            height: 45vh;
+            
+            .main__contentBoxRight {
+                display: none;
+            }
+        }
+        @media (max-width: 450px) {
+           
+            
+            .main__contentBoxLeft {
+               h3 {
+                   font-size: 1.8rem;
+               }
+               p {
+                   font-size: 1.2rem;
+                   display: flex;
+                   flex-wrap: wrap;
+                   width: 26ch;
+               }
+               .main__contentBoxLeftButtons {
+                margin-top: 1.4rem;
+                display: flex;
+                flex-direction: column;
+                
+                
+                .contactLink {
+                    margin-bottom: 1rem;
+                    display: flex;
+                    justify-content: center;
+                }
+                .projectsLink {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
             }
         }
         
