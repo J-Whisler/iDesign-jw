@@ -46,7 +46,7 @@
                 }
             }
         }
-        @media (max-width: 820px) {
+        @media (max-width: 450px) {
         
             top: 57%;
             .contactMe__contentBoxLeft {
@@ -55,6 +55,9 @@
                     
                 }
             }
+        }
+        @media (max-width: 420px) {
+            top: 62%;
         }
     }
 }

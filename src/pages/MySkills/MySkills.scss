@@ -38,11 +38,14 @@
                 grid-template-columns: repeat(1, 1fr);
             }
         }
-        @media (max-width: 4500px) {
+        @media (max-width: 450px) {
             width: 85vw;
             height: 65vh;
             top: 57%;
          
+        }
+        @media (max-width: 420px) {
+            top: 62%;
         }
     }
 }
