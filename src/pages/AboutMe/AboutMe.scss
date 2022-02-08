@@ -97,13 +97,16 @@
         }
        
 
-        @media (max-width: 500px) {
+        @media (max-width: 450px) {
             height: 65vh;
             width: 85vw;
             top: 55%;
             .aboutMe__contentBoxText {
                 .aboutMe__paragraph {
                     font-size: 1.1rem;
+                    .p-link {
+                        font-size: 1.1rem;
+                    }
                 }
             }
         }
