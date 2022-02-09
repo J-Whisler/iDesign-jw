@@ -147,30 +147,24 @@ const DesktopSocials = () => {
         <div className="icons">
           <motion.div
             className="icon__container"
-            variants={InstagramAnimation}
-            initial="hidden"
-            animate="show"
-          >
-            <FontAwesomeIcon
-              icon={faInstagramSquare}
-              className="icon margin-bottom"
-            />
-          </motion.div>
-          <motion.div
-            className="icon__container"
             variants={GithubAnimation}
             initial="hidden"
             animate="show"
           >
-            <FontAwesomeIcon icon={faGithub} className="icon margin-bottom" />
+            <a href="https://github.com/J-Whisler">
+              <FontAwesomeIcon icon={faGithub} className="icon margin-bottom" />
+            </a>
           </motion.div>
+
           <motion.div
             className="icon__container"
             variants={LinkedInAnimation}
             initial="hidden"
             animate="show"
           >
-            <FontAwesomeIcon icon={faLinkedin} className="icon" />
+            <a href="https://www.linkedin.com/in/jacobwhisler/">
+              <FontAwesomeIcon icon={faLinkedin} className="icon" />
+            </a>
           </motion.div>
         </div>
         <motion.span
@@ -196,7 +190,9 @@ const DesktopSocials = () => {
             initial="hidden"
             animate="show"
           >
-            <FontAwesomeIcon icon={faFile} className="icon" />
+            <a href="/">
+              <FontAwesomeIcon icon={faFile} className="icon" />
+            </a>
           </motion.div>
         </div>
         <motion.span

@@ -86,17 +86,20 @@ const MobileBurgerMenu = ({ setMobileMenuIsOpen }) => {
       </div>
       <div className="menu__socialLinks">
         <div className="icon__container">
-          <FontAwesomeIcon className="icon" icon={faInstagramSquare} />
+          <a href="https://github.com/J-Whisler">
+            <FontAwesomeIcon className="icon" icon={faGithub} />
+          </a>
         </div>
         <div className="icon__container">
-          <FontAwesomeIcon className="icon" icon={faGithub} />
-        </div>
-        <div className="icon__container">
-          <FontAwesomeIcon className="icon" icon={faLinkedin} />
+          <a href="https://www.linkedin.com/in/jacobwhisler/">
+            <FontAwesomeIcon className="icon" icon={faLinkedin} />
+          </a>
         </div>
         <div className="icon__divider"></div>
         <div className="icon__container">
-          <FontAwesomeIcon className="icon" icon={faFile} />
+          <a href="/">
+            <FontAwesomeIcon className="icon" icon={faFile} />
+          </a>
         </div>
       </div>
     </motion.div>
